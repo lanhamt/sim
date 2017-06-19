@@ -9,11 +9,9 @@ varying loads.
 ## Usage
 
 ```
-$ python config_gen.py -i INPUT -o OUTPUT -r RANGE RANGE [-d LOAD_DELTA]
-                       [-c ITER_COUNT]
+$ python config_gen.py -i INPUT -o OUTPUT -r RANGE RANGE [-d LOAD_DELTA] [-c ITER_COUNT]
 
-$ python config_gen.py -i example/16x16.slip.u \ 
-                       -o example/islip_configs/ -r 0 101 -d 2
+$ python config_gen.py -i example/16x16.slip.u -o example/islip_configs/ -r 0 101 -d 2
 ```
 The above command uses master template in `example/16x16.slip.u` to generate
 load configs from 0 to 100 with an interval of 2 (0, 2, 4, ... 100), and
